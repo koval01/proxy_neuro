@@ -8,7 +8,7 @@ app = Flask(__name__)
 
 @app.route('/', methods=['POST'])
 def _proxy(*args, **kwargs):
-    resp = requests.post(
+    resp = post(
         url="https://pelevin.gpt.dobro.ai/generate/",
         headers={key: value for (key, value) in request.headers if key != 'Host'},
         data=request.get_data(),
