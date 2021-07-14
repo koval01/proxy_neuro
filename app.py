@@ -22,6 +22,8 @@ def _proxy(*args, **kwargs):
 
         response = Response(resp.content, resp.status_code, headers)
         return response
+    
+    return abort(400) 
 
 
 if __name__ == '__main__':
