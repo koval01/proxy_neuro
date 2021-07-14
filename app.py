@@ -26,4 +26,4 @@ def _proxy(*args, **kwargs):
 
 
 if __name__ == '__main__':
-    app.run(threaded=True, processes=6)
+    app.run(threaded=True)
