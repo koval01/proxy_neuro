@@ -1,9 +1,11 @@
 """story.q-writer.com Proxy"""
 
 from flask import request, Response, Flask
+from flask_cors import CORS
 from requests import post
 
 app = Flask(__name__)
+CORS(app)
 
 
 @app.route('/', methods=['POST'])
