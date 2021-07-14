@@ -1,6 +1,6 @@
 """story.q-writer.com Proxy"""
 
-from flask import request, Response
+from flask import request, Response, Flask
 from requests import post
 
 app = Flask(__name__)
