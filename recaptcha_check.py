@@ -12,8 +12,6 @@ def get_result(token) -> bool:
         'response': token,
     }
     try:
-        r = post(u, data=data).json()['success']
+        return post(u, data=data).json()['success']
     except Exception as e:
-        r = False
-
-    return result
+        return False
